@@ -46,12 +46,14 @@ def setup_rag_chain(chunks: list[Document]):
     llm = OllamaLLM(model=OLLAMA_MODEL) 
 
     prompt = ChatPromptTemplate.from_template("""
-        Responde a la pregunta basándote únicamente en el contexto proporcionado.
-        Si la respuesta no se encuentra en el contexto, di amablemente que no tienes la información.
-        
-        Contexto: {context}
-        
-        Pregunta: {input}
+    Responde **solo con la información exacta** encontrada en el contexto proporcionado.
+    Si la respuesta no se encuentra en el contexto, escribe únicamente: "No tengo información sobre esto."
+
+    Contexto: {context}
+
+    Pregunta: {input}
+
+    Respuesta:
     """)
 
     document_chain = create_stuff_documents_chain(llm, prompt)
@@ -59,3 +61,30 @@ def setup_rag_chain(chunks: list[Document]):
     retrieval_chain = create_retrieval_chain(retriever, document_chain)
     
     return retrieval_chain
+
+def restructureQuestion(question: str) -> str:
+    """
+    Función para reestructurar preguntas complejas en preguntas simples para un sistema RAG.
+    """
+    llm = OllamaLLM(model=OLLAMA_MODEL)
+
+    prompt = ChatPromptTemplate.from_template("""
+        Eres un asistente especializado en procesamiento de lenguaje natural.
+        Tu tarea es tomar preguntas complejas o redundantes de un usuario
+        y reescribirlas como consultas simples, concisas y directas,
+        manteniendo toda la información relevante. Solo envia la consulta reescrita.
+
+        Ejemplo:
+        Pregunta: ¿Quién fue el que descubrió primero la penicilina y en qué lugar ocurrió?
+        Consulta reescrita: Nombre del descubridor y lugar del descubrimiento de la penicilina.
+
+        Pregunta: {question}
+        Consulta reescrita:
+    """)
+
+    prompt_text = prompt.format(question=question)
+
+    response = llm.invoke(prompt_text)
+    print(response)
+
+    return response
