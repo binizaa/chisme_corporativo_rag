@@ -1,0 +1,215 @@
+ID: 000
+TÍTULO: Qué es Chisme Corporativo
+TIPO: Descripción del podcast
+CONTENIDO: 
+Chisme Corporativo es un podcast de negocios creado por Macarena Riva y Rosalaura López. Cada episodio analiza historias reales de empresas: sus modelos de negocio, éxitos, fracasos, controversias y lecciones. El estilo mezcla rigor investigativo con narrativa relajada, como una conversación de café con datos duros. Publican nuevos episodios semanalmente los martes. El público objetivo incluye emprendedores, profesionales, estudiantes de empresa y cualquier persona interesada en entender cómo funcionan (y tropiezan) las grandes organizaciones.  
+TAGS: podcast, negocios, empresas, controversias, formato
+
+---
+
+ID: 001
+TÍTULO: Perfil de las hosts
+TIPO: Perfil
+CONTENIDO: 
+Las anfitrionas son Macarena Riva y Rosalaura López. Ambas tienen experiencia en análisis de negocios, finanzas y comunicación. Macarena ha sido reconocida en medios por su trabajo en educación financiera y creación de contenido. Rosalaura aporta perspectiva estratégica y acompañamiento en el análisis. Juntas construyen un espacio donde lo complejo se vuelve entendible, enfatizando ética, modelos de negocio sostenibles y ejemplos actuales.  
+TAGS: hosts, perfil, liderazgo femenino, finanzas, comunicación
+
+---
+
+ID: 002
+TÍTULO: Formato típico de un episodio
+TIPO: Contexto general
+CONTENIDO: 
+Un episodio de Chisme Corporativo generalmente sigue esta estructura: 1) Introducción con el tema o empresa a analizar; 2) Historia / orígenes; 3) desarrollo del modelo de negocio y sus decisiones estratégicas; 4) escándalos, crisis o controversias; 5) lecciones para la audiencia; 6) cierre con reflexión y posibles proyecciones. A menudo incluyen datos duros, ejemplos históricos y comparaciones con competidores.  
+TAGS: estructura, episodios, lecciones, historia, controversias
+
+---
+
+ID: 073
+TÍTULO: De Facebook a la superinteligencia: el plan más ambicioso de Zuckerberg
+TIPO: Episodio
+CONTENIDO: 
+Se analiza la trayectoria de Mark Zuckerberg desde sus inicios en Harvard, la evolución de Facebook hacia Meta, adquisiciones como Instagram y WhatsApp, los fracasos como el metaverso y los escándalos de privacidad. También se discute su apuesta reciente en inteligencia artificial y se plantea si tiene lo que se necesita (y si queremos que lo tenga) para liderar la próxima era tecnológica.  
+TAGS: Facebook, Meta, IA, privacidad, Zuckerberg, tecnología
+
+---
+
+ID: 072
+TÍTULO: El secreto mejor guardado de Amazon (y por qué el gobierno lo demandó)
+TIPO: Episodio
+CONTENIDO: 
+Explora cómo Amazon, más allá de ser conocido por AWS y comercio electrónico, tiene un negocio clave en su marketplace de vendedores terceros. Asimismo, se revisan las acusaciones antimonopolio, las comisiones y las prácticas del marketplace que podrían estar ocultando márgenes elevados. Se contrastan los discursos públicos de la empresa con las investigaciones regulatorias.  
+TAGS: Amazon, antimonopolio, marketplace, regulación, estrategia
+
+---
+
+ID: 068
+TÍTULO: Affairs corporativos: los escándalos que tambalearon imperios
+TIPO: Episodio
+CONTENIDO: 
+Este episodio muestra casos emblemáticos de romances u “affairs” en entornos corporativos que terminaron afectando reputaciones, finanzas o estructuras de gobierno interno. Incluye ejemplos como un CEO que envió material inapropiado desde correo corporativo, ejecutivos que vendieron acciones en medio de crisis personales, contratos firmados sin transparencia y la forma en que estos escándalos repercuten más allá de lo personal: legal, reputacional y económico.  
+TAGS: ética, reputación, gobierno corporativo, escándalos, relaciones personales
+
+---
+
+ID: 065
+TÍTULO: McDonald’s y el robo del siglo: La historia real detrás del imperio
+TIPO: Episodio
+CONTENIDO: 
+Cuenta la historia de Ray Kroc y los hermanos McDonald: cómo Ray pasó de vendedor de máquinas de malteadas a tomar control del negocio, el papel de bienes raíces (“real estate”) como parte del modelo de negocio de McDonald’s, la traición entre los hermanos, y los desafíos recientes, incluyendo el declive en ventas y cambios en el mercado.  
+TAGS: McDonald’s, franquicias, bienes raíces, historia corporativa, competencia
+
+---
+
+ID: 064
+TÍTULO: Estée Lauder en crisis: ¿Fracaso inevitable o el regreso más inesperado?
+TIPO: Episodio
+CONTENIDO: 
+Se revisa cómo Estée Lauder, una marca icónica del lujo y cosmética, ha enfrentado pérdidas de relevancia frente a nuevas marcas disruptivas como Rare Beauty, Elf y The Ordinary. Se analiza su estructura de marcas, su estrategia en mercados como China, los retos con consumidores jóvenes (Gen Z), y lo que la empresa está haciendo para reinventarse: Beauty Reimagined, cambios estratégicos y la posibilidad de redención financiera y de imagen.  
+TAGS: belleza, marcas, estrategia de marca, mercado global, renovación
+
+---
+
+ID: 066
+TÍTULO: Warren Buffett y Berkshire Hathaway: El último caballero
+TIPO: Episodio
+CONTENIDO: 
+Biografía de Warren Buffett, sus inicios modestos vendiendo chicles y periódicos, cómo construyó Berkshire Hathaway, su filosofía de inversión, jugadas más brillantes, controversias que han rodeado su carrera (licencias fiscales, decisiones de inversión arriesgadas), y cómo su estilo ha impactado en la cultura financiera global.  
+TAGS: inversiones, Buffett, filosofía financiera, liderazgo, ética
+
+---
+
+ID: 67
+TÍTULO: Tiendas 3B: El modelo de descuento tiene un precio
+TIPO: Episodio
+CONTENIDO: 
+Historia de Tiendas 3B (México), cómo funciona su modelo de hard discount: precios bajos, operaciones austera, abundancia de productos básicos. Se examinan las acusaciones laborales y los costos sociales detrás del modelo, así como el crecimiento explosivo de la cadena, su potencial al escalar y los riesgos asociados a mantener ese precio sin comprometer prácticas éticas.  
+TAGS: retail, México, modelo de negocio, ética laboral, crecimiento
+
+---
+
+ID: 20
+TÍTULO: SoftBank: La locura de Masayoshi, grandes apuestas y polémicas billonarias
+TIPO: Episodio
+CONTENIDO: 
+Retrata a SoftBank y su fundador Masayoshi Son: su historia personal, sus primeras inversiones, su estrategia de apostar fuerte a startups tecnológicas (como WeWork, Uber, DoorDash, etc.), las grandes ganancias y también las pérdidas. Se hablan los riesgos de la visión a largo plazo, la transparencia de los fondos, y cómo algunas apuestas fallidas han marcado la reputación de SoftBank.  
+TAGS: inversión, fondos tecnológicos, visión, riesgo, liderazgo
+
+---
+
+ID: 23
+TÍTULO: L’Oréal: la polémica historia de la mujer más rica del mundo
+TIPO: Episodio
+CONTENIDO: 
+Se explora la vida del fundador Eugène Schueller, orígenes en la industria del tinte, el crecimiento global de L’Oréal, y los escándalos: relación con regímenes autoritarios, acusaciones éticas, la gestión hereditaria de la fortuna Bettencourt, y cómo la marca ha mantenido su poder pese a controversias.  
+TAGS: belleza, herencia, ética, capitalismo, historia
+
+---
+
+ID: 22
+TÍTULO: Novo Nordisk: ¿Se ganó al fin la batalla contra la obesidad?
+TIPO: Episodio
+CONTENIDO: 
+Historia de Novo Nordisk: origen farmacéutico con producción de insulina, evolución en biotecnología, sus logros en salud pública, y su expansión reciente hacia tratamientos para obesidad. También se analizan los desafíos éticos, la regulación médica, acceso al medicamento y su impacto global.  
+TAGS: salud, biotecnología, impacto social, innovación, regulatorio
+
+---
+
+ID: 21
+TÍTULO: Alibaba: La pelea de Jack Ma con el Gobierno Chino
+TIPO: Episodio
+CONTENIDO: 
+Traza los primeros años de Alibaba, receta su transformación en gigante del comercio electrónico, su relación con el gobierno chino, las tensiones políticas y regulatorias. Se discuten los obstáculos legales que ha enfrentado Jack Ma, cómo han respondedido ante la presión del Estado, y las implicaciones de crecer bajo un sistema político autoritario.  
+TAGS: tecnología, China, regulación, comercio electrónico, liderazgo
+
+---
+
+ID: 24
+TÍTULO: WeWork: Subida y caída del unicornio más grande de la historia
+TIPO: Episodio
+CONTENIDO: 
+Historia de WeWork: desde su fundación, rápido crecimiento, modelo de coworking, valoración como unicornio, controversias sobre gobernanza, financiamiento, entre otros. También el impacto que tuvo la cultura interna, de su fundador Adam Neumann, las decisiones que llevaron al colapso de su valuación, y las lecciones al final sobre riesgo, hype y sostenibilidad.  
+TAGS: startups, capitalismo de riesgo, cultura corporativa, crisis, escalabilidad
+
+---
+
+ID: 27
+TÍTULO: Starbucks: ¿Será la estrategia correcta regresar a sus orígenes?
+TIPO: Episodio
+CONTENIDO: 
+Relato sobre los inicios de Starbucks con Howard Schultz, su expansión internacional, las polémicas laborales, su conexión con comunidades locales vs. globalización, y el debate sobre si la marca ha perdido su esencia al crecer tanto. También se abordan errores estratégicos, reconectar con clientes y el reto de mantener autenticidad.  
+TAGS: café, retail global, cultura corporativa, crecimiento, autenticidad
+
+---
+
+ID: 26
+TÍTULO: Hermés: El verdadero lujo
+TIPO: Episodio
+CONTENIDO: 
+Se narra la historia de Hermès desde su fundación como fabricante de arneses a sus productos de lujo icónicos. Se analiza cómo la empresa ha preservado su legado artesanal, la propiedad familiar, la estrategia de exclusividad, su posición frente a LVMH y los desafíos actuales como demanda de lujo más responsable, sostenibilidad y expectativas del consumidor moderno.  
+TAGS: lujo, herencia, artesanía, estrategia, consumidores
+
+---
+
+ID: 25
+TÍTULO: Nike: ¿Se levantará de nuevo la leyenda?
+TIPO: Episodio
+CONTENIDO: 
+Historia de Nike: origen con Knight y Bowerman, sus innovaciones en diseño, marketing deportivo, patrocinios emblemáticos como Michael Jordan, crecimiento global. También crisis recientes: competencia, escándalos en cadena de suministro, presión por responsabilidad social y adaptación a nuevas tendencias del consumidor.  
+TAGS: deporte, branding, marketing, responsabilidad social, historia
+
+---
+
+ID: 32
+TÍTULO: Spotify: El proyecto personal que terminó como el salvador de la industria musical
+TIPO: Episodio
+CONTENIDO: 
+Cuenta cómo Daniel Ek y Martin Lorentzon fundaron Spotify ante la crisis de la piratería musical, la misión de democratizar el acceso a la música, los retos con licencias, competencia legal, monetización y cómo Spotify transformó el modelo de consumo musical global.  
+TAGS: música, streaming, innovación, licencias, modelo de negocio
+
+---
+
+ID: 33
+TÍTULO: Yahoo: De gigante del internet a empresa en el olvido
+TIPO: Episodio
+CONTENIDO: 
+Explora el auge de Yahoo! como pionero de Internet, sus primeras innovaciones (portal, correo, búsqueda), los errores estratégicos, adquisiciones fallidas, competencia creciente (Google, redes sociales), y cómo su marca perdió relevancia ante nuevos modelos tecnológicos.  
+TAGS: internet, estrategia, declive, innovación, competencia
+
+---
+
+ID: 34
+TÍTULO: LEGO: De la quiebra al imperio familiar de juguetes más grande del mundo
+TIPO: Episodio
+CONTENIDO: 
+Relata la crisis financiera que LEGO enfrentó junto a sus problemas operativos, la estrategia de reconversión, licencias (como con películas Disney, etc.), crecimiento de productos digitales, expansión y cómo lograron recuperar su posición en la industria del entretenimiento.  
+TAGS: juguetes, creatividad, marca familiar, recuperación empresarial, innovación
+
+---
+
+ID: 35
+TÍTULO: WhatsApp: El humilde hombre que se hizo billonario vendiendo la privacidad de millones
+TIPO: Episodio
+CONTENIDO: 
+Historia de WhatsApp, desde su origen humilde, usuarios crecientes, adquisición por Facebook, decisiones sobre privacidad, monetización, competencia con otras apps, regulaciones, y dilemas éticos sobre la protección de datos.  
+TAGS: mensajería, privacidad, red social, adquisición, ética
+
+---
+
+ID: 36
+TÍTULO: Samsung: ¿Cómo llegaron a dominar la economía de todo un país?
+TIPO: Episodio
+CONTENIDO: 
+Historia de Samsung desde sus comienzos en Corea del Sur, diversificación en electrónica, chips, móviles, electrodomésticos. Se analiza su rol en la economía surcoreana, cómo ha invertido en tecnología crítica, su estrategia global, competencia con China y retos recientes frente a innovación acelerada.  
+TAGS: electrónica, tecnología, globalización, innovación, economía nacional
+
+---
+
+ID: 39
+TÍTULO: El fraude de ENRON: La primera GRAN ESTAFA que sacudió a Wall Street
+TIPO: Episodio
+CONTENIDO: 
+Relato de cómo ENRON pasó de empresa admirada a escándalo financiero: manipulaciones contables, engaños financieros, pérdidas millonarias para inversores, el colapso en medio de auditorías y regulaciones, pérdidas humanas y reputacionales. Se describen mecanismos internos y consecuencias legales.  
+TAGS: fraude, contabilidad, regulación, reputación, crisis financiera
+
+---
