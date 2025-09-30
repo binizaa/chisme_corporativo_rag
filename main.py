@@ -1,14 +1,20 @@
 # main.py
 
-import os
 import sys
-from rag_core import load_documents_with_fallback, split_documents, setup_rag_chain
-from utils import Colors, OLLAMA_MODEL, DOCUMENT_URL
+# ⬇️ Importaciones desde los nuevos módulos
+from config import Colors, OLLAMA_MODEL 
+from data_loader import load_documents_with_fallback, split_documents 
+from rag_setup import setup_rag_chain
 
 def main():
-    documents = load_documents_with_fallback(DOCUMENT_URL)
+    # ⬇️ CAMBIO AQUÍ: Usamos la ruta local en lugar de la URL
+    DOCUMENT_PATH = "data/chisme_corporativo.txt" 
+    
+    # La función load_documents_with_fallback está diseñada para manejar esto.
+    documents = load_documents_with_fallback(DOCUMENT_PATH) 
     chunks = split_documents(documents)
-
+    # ... (el resto del código permanece igual)
+    # ...
     try:
         retrieval_chain = setup_rag_chain(chunks)
     except ValueError as e:
@@ -19,7 +25,7 @@ def main():
     print(f"\n{Colors.OKBLUE}{Colors.BOLD}{'='*50}{Colors.RESET}")
     print(f"{Colors.OKBLUE}{Colors.BOLD}       ¡El sistema RAG está listo! 🤖      {Colors.RESET}")
     print(f"{Colors.OKBLUE}{Colors.BOLD}{'='*50}{Colors.RESET}")
-    print(f"Pregunta sobre los Roborregos o el modelo {OLLAMA_MODEL}. Escribe 'salir' para terminar.")
+    print(f"Pregunta sobre el 'chisme corporativo'. Escribe 'salir' para terminar.")
 
     while True:
         user_input = input(f"\n{Colors.WARNING}Tu pregunta: {Colors.RESET}{Colors.BOLD}")

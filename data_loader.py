@@ -1,17 +1,10 @@
-# rag_core.py
+# data_loader.py
 
-from langchain_community.document_loaders import WebBaseLoader
-from langchain_community.document_loaders import TextLoader
-from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_community.vectorstores import FAISS
-from langchain_ollama import OllamaEmbeddings
-from langchain_community.llms import Ollama
-from langchain_core.documents import Document
-from langchain_core.prompts import ChatPromptTemplate
-from langchain.chains.combine_documents import create_stuff_documents_chain
-from langchain.chains import create_retrieval_chain
-from utils import Colors, OLLAMA_MODEL, DOCUMENT_URL
 import os
+from langchain_community.document_loaders import WebBaseLoader, TextLoader
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_core.documents import Document
+from config import Colors, DOCUMENT_URL
 
 def load_documents_with_fallback(path_or_url: str) -> list[Document]:
     """
@@ -22,6 +15,7 @@ def load_documents_with_fallback(path_or_url: str) -> list[Document]:
     print(f"{Colors.HEADER}--- 1. Carga de Documentos ---{Colors.RESET}")
 
     try:
+        # Lógica de carga... (código idéntico al que ya tenías en rag_core.py)
         if path_or_url.endswith(".txt") and os.path.exists(path_or_url):
             loader = TextLoader(path_or_url, encoding="utf-8")
             documents = loader.load()
@@ -39,7 +33,7 @@ def load_documents_with_fallback(path_or_url: str) -> list[Document]:
         documents = [
             Document(
                 page_content="""
-                Documento de respaldo: información básica de Roborregos y del modelo llama3.
+                Documento de respaldo: información básica de Roborregos.
                 """,
                 metadata={"source": "documento-ejemplo-local"}
             )
@@ -64,36 +58,3 @@ def split_documents(documents: list[Document]) -> list[Document]:
     chunks = text_splitter.split_documents(documents)
     print(f"   -> Documentos divididos. {Colors.BOLD}Total de chunks: {len(chunks)}.{Colors.RESET}")
     return chunks
-
-def setup_rag_chain(chunks: list[Document]):
-    """
-    Inicializa el Vector Store y configura la cadena RAG completa.
-    """
-    print(f"\n{Colors.HEADER}--- 3. Inicialización de FAISS y Embeddings ---{Colors.RESET}")
-
-    if not chunks:
-        print(f"{Colors.FAIL}\n🚨 ERROR FATAL: No se puede crear el Vector Store porque no hay CHUNKS (piezas de texto).{Colors.RESET}")
-        raise ValueError("La lista de chunks está vacía. Terminando el programa.")
-
-    # 4. Inicialización de Embeddings y Vector Store
-    embeddings = OllamaEmbeddings(model=OLLAMA_MODEL)
-    vector_store = FAISS.from_documents(chunks, embeddings)
-    print(f"{Colors.OKGREEN}   -> Vector Store FAISS creado exitosamente con el modelo {OLLAMA_MODEL}.{Colors.RESET}")
-
-    # 5. Configuración de la Cadena RAG
-    llm = Ollama(model=OLLAMA_MODEL)
-
-    prompt = ChatPromptTemplate.from_template("""
-        Responde a la pregunta basándote únicamente en el contexto proporcionado.
-        Si la respuesta no se encuentra en el contexto, di amablemente que no tienes la información.
-        
-        Contexto: {context}
-        
-        Pregunta: {input}
-    """)
-
-    document_chain = create_stuff_documents_chain(llm, prompt)
-    retriever = vector_store.as_retriever()
-    retrieval_chain = create_retrieval_chain(retriever, document_chain)
-    
-    return retrieval_chain
