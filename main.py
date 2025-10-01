@@ -1,5 +1,3 @@
-# main.py
-
 import sys
 from config import Colors, OLLAMA_MODEL 
 from data_loader import load_documents_with_fallback, split_documents 
@@ -8,10 +6,12 @@ from rag_setup import setup_rag_chain, restructureQuestion
 def main():
     DOCUMENT_PATH = "data/chisme_corporativo.txt" 
     
+    # 1. Cargar y 2. Dividir documentos
     documents = load_documents_with_fallback(DOCUMENT_PATH) 
     chunks = split_documents(documents)
 
     try:
+        # 3. y 5. Configurar la cadena RAG (Ahora híbrida)
         retrieval_chain = setup_rag_chain(chunks)
     except ValueError as e:
         print(f"{Colors.FAIL}\nTerminando la ejecución debido a: {e}{Colors.RESET}")
@@ -32,8 +32,11 @@ def main():
         
         
         try:
-            user_input = restructureQuestion(user_input)
-            response = retrieval_chain.invoke({"input": user_input})
+            # Reestructurar la pregunta para una mejor búsqueda
+            restructured_input = restructureQuestion(user_input)
+            
+            # Invocar la cadena RAG
+            response = retrieval_chain.invoke({"input": restructured_input})
             
             print(f"\n{Colors.OKGREEN}{Colors.BOLD}▶️ Respuesta del RAG ({OLLAMA_MODEL}):{Colors.RESET}")
             print(response["answer"])
