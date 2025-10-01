@@ -22,6 +22,7 @@ def setup_rag_chain(chunks: list[Document]):
     # 4. Inicialización de Embeddings 
     embeddings = OllamaEmbeddings(model=OLLAMA_MODEL)
     vector_store = None
+    print("Hola")
 
     if os.path.exists(CHROMA_DB_DIR):
         # Cargar la DB existente
